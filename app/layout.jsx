@@ -4,22 +4,14 @@ import Footer from "@/components/Footer";
 import style from "./layout.module.css";
 import "./globals.css";
 
-import { Roboto, Anton } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const roboto = Roboto({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "900"],
+  weight: ["400", "900", "700", "800", "500"],
   style: ["italic", "normal"],
   display: "swap",
-  variable: "--font-reoboto",
-});
-
-const anton = Anton({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal"],
-  display: "swap",
-  variable: "--font-anton",
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -29,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" className={`${roboto.variable} ${anton.variable}`}>
+    <html lang="fr" className={`${inter.variable}`}>
       <body className={style.body}>
         <Header />
         <main className={style.main}>{children}</main>

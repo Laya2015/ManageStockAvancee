@@ -1,19 +1,10 @@
 html {
     box-sizing: border-box;
-    font-family: var(--font-reoboto);
+    font-family: var(--font-inter);
 }
 
 *,
 *::after,
 *::before {
     box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-anton);
 }
