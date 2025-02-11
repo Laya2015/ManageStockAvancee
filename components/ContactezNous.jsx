@@ -49,27 +49,33 @@ export default function ContactezNous() {
             <input type="Nom" />
           </div>
         </div>
+        <div className={style.bar}></div>
         <div className={style.info}>
-          <div>
-            <div>
-              <Link href="#">
-                <Image src={facebook} alt="logo facebook" />
-              </Link>
-              <Link href="#">
-                <Image src={instagram} alt="logo instagram" />
-              </Link>
-              <Link href="#">
-                <Image src={twitter} alt="logo twitter" />
-              </Link>
-              <Link href="#">
-                <Image src={whatsapp} alt="logo whatsapp" />
-              </Link>
-            </div>
-            <div>
+          <div className={style.reseaux}>
+            <Link href="#">
+              <Image src={facebook} alt="logo facebook" />
+            </Link>
+            <Link href="#">
+              <Image src={instagram} alt="logo instagram" />
+            </Link>
+            <Link href="#">
+              <Image src={twitter} alt="logo twitter" />
+            </Link>
+            <Link href="#">
+              <Image src={whatsapp} alt="logo whatsapp" />
+            </Link>
+          </div>
+          <div className={style.adresse}>
+            <div className={style.circle}></div>
+            <div className={style.adresseText}>
               <h4>Adresse</h4>
               <p>801 Aviation Pkwy, Ottawa, ON K1J 1H2</p>
+              <p>438 896 8181</p>
             </div>
-            <div>
+          </div>
+          <div className={style.contact}>
+            <div className={style.circle}></div>
+            <div className={style.contactText}>
               <h4>Information Pratique</h4>
               <p>contact@managestock.com</p>
             </div>
