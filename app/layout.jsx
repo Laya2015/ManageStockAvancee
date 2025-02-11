@@ -8,12 +8,11 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "900", "700", "800"],
+  weight: ["400", "900", "700", "800", "500"],
   style: ["italic", "normal"],
   display: "swap",
   variable: "--font-inter",
 });
-
 
 export const metadata = {
   title: "ManageStock",
