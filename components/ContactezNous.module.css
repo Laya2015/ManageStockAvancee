@@ -1,0 +1,68 @@
+.ContactezNous {
+    width: 70%;
+    height: 70vh;
+    box-sizing: border-box;
+    background-color: aqua;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.4);
+}
+
+
+.ContactezNous h4 {
+    margin: 0;
+    padding: 0px 0px 5px 0px;
+    font-weight: 800;
+    font-family: var(--font-inter);
+}
+
+.ContactezNous h1 {
+    font-weight: 800;
+    font-family: var(--font-inter);
+    padding: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    border-bottom: 2px solid #00000099;
+}
+
+.ContactezNous input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.bodyMessage span {
+    color: rgb(207, 0, 0);
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bodyMessage {
+    width: 60%;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.nomEmail div,
+.telNomEntreprise div {
+    width: 50%;
+}
+
+.nomEmail,
+.telNomEntreprise {
+    display: flex;
+    gap: 30px;
+    margin: 10px 50px 0px 0px;
+}
+
+.objet,
+.message {
+    margin: 10px 50px 0px 0px;
+}
+
+.message input {
+    height: 150px;
+}
