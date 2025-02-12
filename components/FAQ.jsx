@@ -17,7 +17,9 @@ export default function FAQ({ question, response }) {
    <div className={styles.faqHead} onClick={toggleResponse}>
     <IoPlay className={styles.iconPlay} />
     <p className={styles.faqQuestion}>{question}</p>
-    <FaAngleDown className={styles.iconArrow} />
+    <FaAngleDown
+     className={`${styles.iconArrow} ${isResponse ? styles.rotated : ""}`}
+    />
    </div>
 
    {/* Réponse */}
