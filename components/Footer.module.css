@@ -1,0 +1,63 @@
+.footer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #221E34;
+    padding: 40px 100px;
+    gap: 30px;
+    color: white;
+}
+
+.Image {
+    width: 40%;
+    height: 40%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.liens,
+.contact,
+.reseaux {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.reseaux div {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+.liens a {
+    color: white;
+}
+
+.footer div {
+    width: 25%;
+}
+
+.wave img {
+    width: 100%;
+}
+
+.wave {
+    transform: translateY(5px);
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer div {
+        width: auto;
+    }
+
+}
