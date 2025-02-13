@@ -1,0 +1,114 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 5px 50px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.logo {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 60vw;
+}
+
+.liste {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  font-size: 19px;
+  font-weight: bold;
+  list-style-type: none;
+  align-items: center;
+}
+
+.liste a {
+  color: white;
+  text-decoration: none;
+}
+
+.liste a:hover {
+  color: #FFB623;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuIcon {
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 35%;
+  margin-right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 70px;
+    gap: 10rem;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 100px 0;
+    z-index: 99;
+  }
+
+  .liste {
+    flex-direction: column;
+  }
+
+  .liste li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menuButton {
+    display: inline;
+    width: 10px;
+    height: 10px;
+  }
+
+  .navActive {
+    display: flex;
+  }
+}
