@@ -5,50 +5,48 @@ import facebook from "@/public/facebook.svg";
 import instagram from "@/public/instagram.svg";
 import twitter from "@/public/twitter.svg";
 import whatsapp from "@/public/whatsapp.svg";
+import Button from "@/components/Button";
 
 export default function ContactezNous() {
   return (
     <div className={style.ContactezNous}>
       <h1>Contactez-Nous</h1>
       <div className={style.body}>
-        <div className={style.bodyMessage}>
+        <form className={style.form}>
           <div className={style.nomEmail}>
-            <div>
-              <h4>
-                Nom<span>*</span>
-              </h4>
-              <input type="Nom" />
-            </div>
-            <div>
-              <h4>
-                Email<span>*</span>
-              </h4>
-              <input type="Nom" />
-            </div>
+            <label>
+              Nom <span>*</span>
+              <input type="text" name="nom" />
+            </label>
+            <label>
+              Email <span>*</span>
+              <input type="email" name="courriel" />
+            </label>
           </div>
           <div className={style.telNomEntreprise}>
-            <div>
-              <h4>
-                Telephone<span>*</span>
-              </h4>
-              <input type="Nom" />
-            </div>
-            <div>
-              <h4>Nom de l'entreprise</h4>
-              <input type="Nom" />
-            </div>
+            <label>
+              Telephone <span>*</span>
+              <input type="tel" name="telephone" />
+            </label>
+            <label>
+              Nom de l'entreprise <span>*</span>
+              <input type="text" name="nomEntreprise" />
+            </label>
           </div>
           <div className={style.objet}>
-            <h4>Objet</h4>
-            <input type="Nom" />
+            <label>
+              Objet <span>*</span>
+              <input type="text" name="objet" />
+            </label>
           </div>
           <div className={style.message}>
-            <h4>
-              Votre Message<span>*</span>
-            </h4>
-            <input type="Nom" />
+            <label>
+              Votre Message <span>*</span>
+              <input type="text" name="message" />
+            </label>
           </div>
-        </div>
+          <Button texte={"Envoyer"} active={true} className={style.button} />
+        </form>
         <div className={style.bar}></div>
         <div className={style.info}>
           <div className={style.reseaux}>
@@ -82,6 +80,7 @@ export default function ContactezNous() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

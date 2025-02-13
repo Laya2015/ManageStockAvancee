@@ -7,8 +7,7 @@
     box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.4);
 }
 
-
-.ContactezNous h4 {
+.ContactezNous label {
     margin: 0;
     padding: 0px 0px 5px 0px;
     font-weight: 800;
@@ -31,7 +30,7 @@
     background-color: transparent;
 }
 
-.bodyMessage span {
+.form span {
     color: rgb(207, 0, 0);
 }
 
@@ -42,12 +41,12 @@
 
 }
 
-.bodyMessage {
+.form {
     width: 60%;
 }
 
-.nomEmail div,
-.telNomEntreprise div {
+.nomEmail label,
+.telNomEntreprise label {
     width: 50%;
 }
 
@@ -123,4 +122,10 @@
     background-color: #ff8623;
     border-radius: 50%;
     margin-top: 4px;
+}
+
+.button {
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
 }
