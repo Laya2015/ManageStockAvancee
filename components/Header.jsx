@@ -19,6 +19,7 @@ export default function Header() {
    <div className={styles.logo}>
     <Image src={logo} alt="Logo ManageStock" className={styles.image} />
    </div>
+
    <div onClick={toggleNav} className={styles.menuButton}>
     <Image
      src={btnMenu}
@@ -36,7 +37,7 @@ export default function Header() {
       <Link href="#">À propos</Link>
      </li>
      <li>
-      <Link href="/#">Contact</Link>
+      <Link href="/evenements">Contact</Link>
      </li>
      <li>
       <Link href="#">FAQ</Link>
