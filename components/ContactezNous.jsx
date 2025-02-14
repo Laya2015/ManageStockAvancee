@@ -26,6 +26,7 @@ export default function ContactezNous() {
    * @param {FormData} formData - Les données soumises via le formulaire.
    * @returns {object} - Un objet représentant l'état mis à jour du formulaire avec les erreurs.
    */
+  
   const contactez = (previeousState, formData) => {
     const nom = formData.get("nom");
     const courriel = formData.get("courriel");
