@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
+import MainLayout from "@/components/MainLayout";
 
 import style from "./layout.module.css";
 import "./globals.css";
@@ -23,9 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${inter.variable}`}>
       <body className={style.body}>
-        <Header />
-        <main className={style.main}>{children}</main>
-        <Footer />
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
