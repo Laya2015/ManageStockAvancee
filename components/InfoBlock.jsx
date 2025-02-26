@@ -3,16 +3,16 @@ import { useState } from "react";
 import style from "./InfoBloc.module.css";
 
 export default function InfoBloc({ defaultTitle, defaultHeaders, data = [] }) {
- const [title, setTitle] = useState(defaultTitle);
- const [headers, setHeaders] = useState(defaultHeaders);
+//  const [title, setTitle] = useState(defaultTitle);
+//  const [headers, setHeaders] = useState(defaultHeaders);
 
  return (
   <div className={style.infoBloc}>
-   <h2 className={style.tableTitle}>{title}</h2>
+   <h2 className={style.tableTitle}>{defaultTitle}</h2>
    <table className={style.infoTable}>
     <thead>
      <tr>
-      {headers.map((header, index) => (
+      {defaultHeaders.map((header, index) => (
        <th key={index}>{header}</th>
       ))}
      </tr>
