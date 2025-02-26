@@ -1,7 +1,7 @@
 .body {
     display: grid;
-    grid-template-rows: 4rem 1fr;
-    grid-template-columns: 18rem 1fr;
+    grid-template-rows: 2.5rem 1fr;
+    grid-template-columns: 14rem 1fr;
     grid-template-areas:
         "sideBar bar"
         "sideBar main";
@@ -22,11 +22,12 @@
 }
 
 .bar img {
-    width: 15rem;
+    width: 10rem;
     height: 100%;
 }
 
 .main {
     grid-area: main;
     background-color: #F5F6FA;
+    padding: 1rem;
 }
