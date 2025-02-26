@@ -1,0 +1,33 @@
+.body {
+    display: grid;
+    grid-template-rows: 2.5rem 1fr;
+    grid-template-columns: 14rem 1fr;
+    grid-template-areas:
+        "sideBar bar"
+        "sideBar main";
+    min-height: 100vh;
+    margin: 0;
+}
+
+.body h1 {
+    margin: 0;
+}
+
+.bar {
+    background-color: #221E34;
+    grid-area: bar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar img {
+    width: 10rem;
+    height: 100%;
+}
+
+.main {
+    grid-area: main;
+    background-color: #F5F6FA;
+    padding: 1rem;
+}
