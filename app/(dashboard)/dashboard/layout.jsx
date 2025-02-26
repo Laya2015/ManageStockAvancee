@@ -5,8 +5,8 @@ import Image from "next/image";
 import logo from "@/public/Logo-White.png";
 
 import { Inter } from "next/font/google";
-import SideBar from "@/components/SideBar";
 
+import SideBar from "@/components/SideBar";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "900", "700", "800", "500"],
