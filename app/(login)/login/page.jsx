@@ -1,9 +1,10 @@
 import styles from "./page.module.css";
+import FormInscription from "@/components/login";
 
 export default function Connexion() {
   return (
     <>
-      <h1>Connexion</h1>
+      <FormInscription/>
     </>
   );
 }
