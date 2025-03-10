@@ -24,6 +24,8 @@
  background-color: #e8e8e8;
  padding: 10px;
  text-align: left;
+ word-wrap: break-word;
+ white-space: normal;
 }
 
 .infoTable td {
