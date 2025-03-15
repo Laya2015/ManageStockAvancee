@@ -1,15 +1,18 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-top: 40px;
 }
 
 .input {
   padding: 10px;
-  border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #F3F3F3;
   font-size: 16px;
+  border: 1px solid rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  width: 17rem;
 }
 
 .buttonContainer {
@@ -17,10 +20,15 @@
   gap: 1rem;
 }
 
+.buttonContainer button {
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
 /* Update only the textarea to be longer horizontally and disable manual resizing */
 .textarea {
   height: 100px;  /* Keep the current height */
   width: 150%;    /* Make it 50% wider than the other inputs */
   max-width: 600px; /* Optional: limit the maximum width */
-  resize: none;   /* Disable manual resizing */
+  resize: none; 
 }
