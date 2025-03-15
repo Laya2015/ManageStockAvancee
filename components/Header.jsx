@@ -44,8 +44,8 @@ export default function Header() {
           </li>
         </ul>
         <div className={styles.buttons}>
-          <Button texte="S'inscrire" goToUrl={"/login"} />
-          <Button texte="Se connecter" active={true} goToUrl={"/inscription"} />
+          <Button texte="S'inscrire" goToUrl={"/inscription"} />
+          <Button texte="Se connecter" active={true} goToUrl={"/login"} />
         </div>
       </nav>
     </header>
