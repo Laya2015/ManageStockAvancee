@@ -31,7 +31,7 @@ export default function Inventaire() {
        <div className={style.boutons}>
         <div onClick={toggleInputForm}>
          <Button
-          texte={"Modifier"}
+          texte={"Nouveau"}
           active={true}
           className={""}
           type={"button"}
