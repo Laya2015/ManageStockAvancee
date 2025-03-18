@@ -150,7 +150,7 @@ export default function SideBar() {
           <li>
             <div>
               <MdOutlineLogout className={style.sideBarLogo} />
-              <Link href="#">Déconnexion</Link>
+              <Link href="/">Déconnexion</Link>
             </div>
           </li>
         </ul>

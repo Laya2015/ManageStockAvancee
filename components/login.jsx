@@ -1,16 +1,18 @@
 "use client";
+
 import style from "./login.module.css";
 import logo from "@/public/Logo-White.png";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useActionState } from "react";
 
 export default function Login() {
   const url = usePathname();
+  const router = useRouter();
 
-  const connexionInscription = (previeousState, formData) => {
+  const connexionInscription = async (previeousState, formData) => {
     const nomEntreprise = formData.get("nomDeEntreprise");
     const email = formData.get("email");
     const nomUtilisateur = formData.get("nomUtilisateur");
@@ -51,7 +53,7 @@ export default function Login() {
       erreur = true;
       newState.nomUtilisateur.erreur =
         "Veuillez entrer votre nom d'utilisateur";
-    } else if (nomUtilisateur.length < 4 || nomUtilisateur.length > 10) {
+    } else if (nomUtilisateur.length < 4 || nomUtilisateur.length > 20) {
       erreur = true;
       newState.nomUtilisateur.erreur =
         "veuillez entrer un non d'utilisateur entre 4 et 10 lettre";
@@ -70,6 +72,23 @@ export default function Login() {
       newState.email.valeur = formData.get("email");
       newState.nomUtilisateur.valeur = formData.get("nomUtilisateur");
       newState.motDePasse.valeur = formData.get("motDePasse");
+    }
+
+    if (!erreur) {
+      if (nomUtilisateur !== "manageStock") {
+        erreur = true;
+        newState.nomUtilisateur.erreur =
+          "Aucun compte avec cette adresse courriel.";
+        return newState;
+      }
+      const motDePasse = formData.get("motDePasse");
+      if (motDePasse !== "manageStock") {
+        erreur = true;
+        newState.motDePasse.erreur = "Mot de passe incorrect";
+        return newState;
+      }
+
+      router.replace("/dashboard");
     }
 
     return newState;
@@ -131,7 +150,7 @@ export default function Login() {
               type="text"
               name="nomUtilisateur"
               minLength={4}
-              maxLength={10}
+              maxLength={20}
               defaultValue={formState.nomUtilisateur.valeur}
               required
               placeholder="Nom d'utilisateur"
