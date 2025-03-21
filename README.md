@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ManageStock  
 
-## Getting Started
+## Description  
+ManageStock est une plateforme web destinée à améliorer la gestion d'inventaire des petites et moyennes entreprises (PME).  
+Elle permet de centraliser les informations en temps réel et d'envoyer des alertes automatiques pour simplifier la gestion des stocks et améliorer la réactivité des entreprises.  
 
-First, run the development server:
+🚨 **État du projet :** Ce projet a été réalisé dans un cadre éducatif. Seule la partie **front-end** a été développée.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies utilisées  
+- **React**  
+- **Next.js**  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Équipe de développement  
+Ce projet a été réalisé par :  
+- **Elias Oussameur**  
+- **Lady Phanuelle Lienou Ngandim**  
+- **Jergi Makhoul**  
+- **Anisse Benfathallah**  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Comment contribuer ?  
+🚫 **Ce projet est fermé aux contributions externes.** Seuls les membres de l'équipe peuvent travailler dessus.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Toutefois, si quelqu'un souhaite développer des fonctionnalités manquantes, il peut :  
+1. **Forker** le dépôt sur son propre GitHub.  
+2. **Développer** les fonctionnalités manquantes indépendamment.  
+3. **Utiliser** son fork pour ses propres besoins, mais sans affecter le projet original.  
 
-## Learn More
+## Gestion du projet  
+🛠 **Géré par : Elias Oussameur**  
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licence  
+🚧 **Projet éducatif - Pas de licence définie pour le moment.**  
