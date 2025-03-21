@@ -30,3 +30,7 @@ Toutefois, si quelqu'un souhaite développer des fonctionnalités manquantes, il
 
 ## Licence  
 🚧 **Projet éducatif - Pas de licence définie pour le moment.**  
+
+## 📌 Statut du projet  
+🚨 Ce projet est **ARCHIVÉ** et en lecture seule.  
+Aucune contribution ou mise à jour ne sera effectuée sur ce dépôt.
