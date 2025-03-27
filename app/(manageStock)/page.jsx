@@ -14,9 +14,13 @@ import imgChart from "@/public/chart-img.png";
 import imgIdentifier from "@/public/identifiez-img.jpg";
 import imgSuivez from "@/public/suivez-img.png";
 import logoWhite from "@/public/Logo-White.png";
-import { redirect } from "next/dist/server/api-utils";
 
-export default function Home() {
+import { DBConnection } from "@/lib/mongoDB";
+
+
+export default async function Home() {
+
+  await DBConnection();
   return (
     <>
       <div className={styles.sectionBanner} id="Accueil">
