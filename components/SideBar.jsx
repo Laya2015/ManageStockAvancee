@@ -145,6 +145,36 @@ export default function SideBar() {
               </div>
             )}
           </li>
+          
+
+
+
+          <li>
+            {url === "/dashboard/categories" ? (
+              <div className={style.selection}>
+                <span className={style.circleH}></span>
+                <span className={style.circleB}></span>
+                <FiUsers
+                  className={style.sideBarLogo}
+                  style={{ color: "black" }}
+                />
+                <Link href="/dashboard/categories">
+                  Gestion des Categories
+                </Link>
+              </div>
+            ) : (
+              <div>
+                <FiUsers className={style.sideBarLogo} />
+                <Link href="/dashboard/categories">
+                  Gestion des Categories
+                </Link>
+              </div>
+            )}
+          </li>
+
+
+
+
         </ul>
         <ul>
           <li>
